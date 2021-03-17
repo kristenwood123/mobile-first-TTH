@@ -5,10 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
   </style>
   <title>Document</title>
 </head>
@@ -22,7 +24,7 @@
         <li class='link'><a href="index.html">Home</a></li>
         <li class='link'><a href="#portfolio">Portfolio</a></li>
         <li class='link'><a href="#contact">Contact</a></li>
-        <li class='link'><a href="index.html">Skills</a></li>
+        <li class='link'><a href="#skills">Skills</a></li>
       </ul>
     </nav>
     <div class="header__container">
@@ -84,6 +86,35 @@
     </article>
   </div>
 
+  <section class='skills' id='skills'>
+    <h2>Skills</h2>
+      <article class="skills-container">
+        <div class="skills__item" data-aos='fade-up'>
+        <img src="./images/icons8-javascript-96.png" alt="JS">
+        <p>Javascript</p>
+        </div>
+
+        <div class="skills__item" data-aos='fade-up'>
+          <img src="./images/icons8-html-5-96.png" alt="HTML5">
+          <p>HTML5</p>
+        </div>
+
+        <div class="skills__item" data-aos='fade-up'>
+          <img src="./images/icons8-css3-96.png" alt="css">
+          <p>CSS</p>
+        </div>
+
+        <div class="skills__item" data-aos='fade-up'>
+          <img src="./images/icons8-react-native-96.png" alt="react">
+          <p>React</p>
+        </div>
+
+        <div class="skills__item" data-aos='fade-up'>
+          <img src="./images/icons8-github-96.png" alt="Github">
+          <p>Github</p>
+        </div>
+      </article>
+  </section>
 
   <footer>
     <div class="wrapper">
@@ -102,7 +133,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="index.html">Skills</a></li>
+          <li><a href="#skills">Skills</a></li>
         </ul>
         <li class='to-top'><a href="#top">BACK TO TOP</a></li>
       </nav>
@@ -110,5 +141,7 @@
     </footer>
     </main>
   </div>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>

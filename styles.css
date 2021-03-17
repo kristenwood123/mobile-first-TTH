@@ -151,6 +151,37 @@ footer h2 {
 
 /* End of services------------------------ */
 
+/* Skills --------------------------------- */
+.skills {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.skills h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.skills-container {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.skills p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.skills__item {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.skills img {
+  max-width: 80px;
+  margin-bottom: -5px;
+}
+
 /* Footer --------------------------------- */
 
 footer {
@@ -291,6 +322,32 @@ footer p {
   .card img {
     max-width: 100%;
     margin-bottom: 1rem;
+  }
+
+  /* Skills at 768 ------------------- */
+
+  .skills {
+    width: 80%;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .skills h2 {
+    margin-bottom: -10px;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  .skills-container {
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  .skills__item {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   /* Footer at 768px ---------------- */
