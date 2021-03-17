@@ -99,8 +99,11 @@ footer h2 {
 /* End of Header/Navbar--------------------- */
 
 /* Portfolio section ----------------------- */
-.portfolio {
+.portfolio,
+.portfolio__container {
   display: flex;
+}
+.portfolio {
   background-color: rgb(221, 231, 240);
   margin-top: 2.5rem;
   padding-top: 3rem;
@@ -116,7 +119,6 @@ footer h2 {
 }
 
 .portfolio__container {
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -408,14 +410,17 @@ footer p {
 
 /* min width 1024 ---------------------------------- */
 @media screen and (min-width: 1024px) {
-  .navbar {
+  .navbar,
+  .navbar__ul,
+  .header__container {
     display: flex;
+  }
+  .navbar {
     flex-direction: row;
     justify-content: space-between;
   }
 
   .navbar__ul {
-    display: flex;
     flex-direction: row;
   }
 
@@ -428,7 +433,6 @@ footer p {
   }
 
   .header__container {
-    display: flex;
     flex-direction: row-reverse;
     margin-bottom: 15px;
     align-items: flex-start;
