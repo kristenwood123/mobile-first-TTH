@@ -1,6 +1,7 @@
 :root {
   --clr-background: rgb(247, 244, 244);
   --clr-gray: rgb(119, 114, 114);
+  --clr-blue: rgb(11, 129, 226);
   --font-main: "Source Sans Pro", sans-serif;
 }
 
@@ -100,7 +101,7 @@ footer h2 {
 /* Portfolio section ----------------------- */
 .portfolio {
   display: flex;
-  background-color: white;
+  background-color: rgb(221, 231, 240);
   margin-top: 2.5rem;
   padding-top: 3rem;
   flex-direction: column;
@@ -177,6 +178,11 @@ footer h2 {
   cursor: pointer;
 }
 
+.skills__item img:hover {
+  transform: scale(1.1);
+  transition: ease-out 0.3s;
+}
+
 .skills img {
   max-width: 80px;
   margin-bottom: -5px;
@@ -193,6 +199,16 @@ footer {
   background-color: var(--clr-background);
 }
 
+.footer__nav {
+  width: 100%;
+  display: flex;
+  min-height: 30px;
+  padding: 10px;
+  bottom: 0;
+  text-align: center;
+  justify-content: space-between;
+}
+
 footer h2 {
   font-size: 18px;
   margin-bottom: 2rem;
@@ -203,14 +219,8 @@ footer p {
   color: var(--clr-gray);
 }
 
-.footer__nav {
-  width: 100%;
-  display: flex;
-  min-height: 30px;
-  padding: 10px;
-  bottom: 0;
-  text-align: center;
-  justify-content: space-between;
+.footer__text-container1 p {
+  color: var(--clr-blue);
 }
 
 .footer__nav-links {
@@ -239,7 +249,7 @@ footer p {
 }
 
 .footer__nav-hr {
-  width: 88%;
+  width: 100%;
   margin: 0 auto;
   border-color: rgb(255, 255, 255);
 }
@@ -332,17 +342,18 @@ footer p {
     margin-top: 4rem;
   }
 
-  .skills h2 {
-    margin-bottom: -10px;
-    text-transform: uppercase;
-    font-size: 16px;
-  }
   .skills-container {
     flex-direction: row;
     justify-content: center;
     flex-grow: 1;
     width: 100%;
     margin-bottom: 80px;
+  }
+
+  .skills h2 {
+    margin-bottom: -10px;
+    text-transform: uppercase;
+    font-size: 16px;
   }
 
   .skills__item {
@@ -367,13 +378,7 @@ footer p {
   }
 
   .footer__nav {
-    width: 100%;
-    display: flex;
-    bottom: 0;
-    justify-content: space-between;
-    padding-top: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    width: 95%;
   }
 
   .footer__nav h2 {
@@ -384,6 +389,7 @@ footer p {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    margin-left: auto;
   }
 
   .footer__nav-links li {
@@ -392,7 +398,7 @@ footer p {
   }
 
   .footer__nav-hr {
-    width: 88%;
+    width: 95%;
     border-color: rgb(255, 255, 255);
   }
   .to-top {
@@ -400,6 +406,7 @@ footer p {
   }
 }
 
+/* min width 1024 ---------------------------------- */
 @media screen and (min-width: 1024px) {
   .navbar {
     display: flex;
@@ -459,6 +466,4 @@ footer p {
     font-weight: 200;
   }
   /* End Portfolo------------------------------ */
-
-  /* Footer ---------------------------------- */
 }
