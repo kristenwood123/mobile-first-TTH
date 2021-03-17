@@ -13,14 +13,15 @@
   <title>Document</title>
 </head>
 <body>
+<div class='wrapper'>
   <div class="container">
   <header>
     <nav class="navbar">
       <h2 class='name'>Kristen Woodward</h2>
       <ul class="navbar__ul">
         <li class='link'><a href="index.html">Home</a></li>
-        <li class='link'><a href="index.html">Portfolio</a></li>
-        <li class='link'><a href="index.html">Contact</a></li>
+        <li class='link'><a href="#portfolio">Portfolio</a></li>
+        <li class='link'><a href="#contact">Contact</a></li>
         <li class='link'><a href="index.html">Skills</a></li>
       </ul>
     </nav>
@@ -28,10 +29,11 @@
       <img src="./images/responsive-layout-profile.png" alt="profile-image">
       <p class="header__text">Hi! I am a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am exicted to put all my skills to use!</p>
     </div>
+  </div>
   </header>
 
-  <main class="portfolio">
-    <h2 class='portfolio__header'>Portfolio</h2>
+  <main class="portfolio" id='portfolio'>
+     <h2 class='portfolio__header'>Portfolio</h2>
     <div class="portfolio__container">
     <article class='card'>
       <img src='./images/portfolio-1.png' alt="marketing page">
@@ -82,24 +84,29 @@
     </article>
   </div>
 
+
   <footer>
-    <div class="footer__text-container">
+    <div class="wrapper">
+    <div class="footer__text-container" id='contact'>
     <h2>Contact</h2>
     <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
     </div>
+      <div class="footer__text-container1">
     <p><span class='phone'>Phone</span> <strong>+1 (111) 555-1234</strong></p>
     <p><span class='email'>Email</span> <strong>kristenwood123@gmail.com</strong></p>
+    </div>
     <hr class='footer__nav-hr'>
     <nav class="footer__nav">
       <h2>Kristen</h2>
         <ul class='footer__nav-links'>
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">Portfolio</a></li>
-          <li><a href="index.html">Contact</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a href="index.html">Skills</a></li>
         </ul>
-        <li class='to-top'><a href="">BACK TO TOP</a></li>
+        <li class='to-top'><a href="#top">BACK TO TOP</a></li>
       </nav>
+    </div>
     </footer>
     </main>
   </div>
