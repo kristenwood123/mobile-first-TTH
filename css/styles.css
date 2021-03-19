@@ -476,6 +476,14 @@ footer p {
 }
 
 /* Dark mode------------------------------- */
+label {
+  background-color: #111;
+  height: 26px;
+  display: flex;
+  width: 50px;
+  border-radius: 50%;
+}
+
 .darkmode .portfolio {
   background-color: var(--clr-dark-gray);
   color: var(--clr-dark-text);
