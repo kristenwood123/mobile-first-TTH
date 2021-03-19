@@ -476,12 +476,10 @@ footer p {
 }
 
 /* Dark mode------------------------------- */
-label {
-  background-color: #111;
-  height: 26px;
-  display: flex;
+button[class="darkmode"] {
   width: 50px;
-  border-radius: 50%;
+  height: 26px;
+  cursor: pointer;
 }
 
 .darkmode .portfolio {
@@ -500,8 +498,8 @@ label {
 }
 
 .darkmode .navbar__ul li {
-  background-color: var(--clr-dark-gray);
   color: var(--clr-dark-text);
+  background-color: transparent;
 }
 
 .darkmode a[href] {
