@@ -1,8 +1,11 @@
 :root {
   --clr-background: rgb(247, 244, 244);
   --clr-gray: rgb(119, 114, 114);
-  --clr-blue: rgb(11, 129, 226);
   --font-main: "Source Sans Pro", sans-serif;
+
+  --clr-dark-gray: #262626;
+  --clr-dark-black: #121212;
+  --clr-dark-text: rgb(226, 225, 225);
 }
 
 * {
@@ -104,7 +107,7 @@ footer h2 {
   display: flex;
 }
 .portfolio {
-  background-color: rgb(221, 231, 240);
+  background-color: rgb(238, 237, 237);
   margin-top: 2.5rem;
   padding-top: 3rem;
   flex-direction: column;
@@ -222,7 +225,7 @@ footer p {
 }
 
 .footer__text-container1 p {
-  color: var(--clr-blue);
+  color: var(--clr-gray);
 }
 
 .footer__nav-links {
@@ -470,4 +473,29 @@ footer p {
     font-weight: 200;
   }
   /* End Portfolo------------------------------ */
+}
+
+/* Dark mode------------------------------- */
+.darkmode .portfolio {
+  background-color: var(--clr-dark-gray);
+  color: var(--clr-dark-text);
+}
+
+.darkmode footer {
+  background-color: var(--clr-dark-black);
+  color: var(--clr-dark-text);
+}
+
+.darkmode .wrapper {
+  background-color: var(--clr-dark-black);
+  color: var(--clr-dark-text);
+}
+
+.darkmode .navbar__ul li {
+  background-color: var(--clr-dark-gray);
+  color: var(--clr-dark-text);
+}
+
+.darkmode a[href] {
+  color: var(--clr-dark-text);
 }
